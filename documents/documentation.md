@@ -1,0 +1,13 @@
+
+    -Push to github
+    -Spin up environment
+    -prepare environment variables
+    -checkout code
+    -install NodeJs
+    -setting up elastic beans CLI
+    -install AWS CLI
+    -configure AWS Access key ID
+    -install backend and frontend dependencies
+    -frontend and API tests
+    -frontend and API build
+    -deploy frontend and backend
