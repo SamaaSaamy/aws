@@ -20,17 +20,29 @@
  
         # install dependencies in both apps
         - run:
-            name: install 
+            name: installBE
             command: |
-              api:install && frontend:install
+              api:install
         - run:
-            name: test
+            name: installFE 
             command: |
-              api:test && frontend:test
+              frontend:install
         - run:
-            name: build
+            name: testBE
             command: |
-              api:build && frontend:build      
+              api:test
+        - run:
+            name: testFE 
+            command: |
+              frontend:test
+        - run:
+            name: buildFE
+            command: |
+              api:build  
+        - run:
+            name: buildFE 
+            command: |
+              frontend:build    
         - run:
             name: deploy
             command: |
