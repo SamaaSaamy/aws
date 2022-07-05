@@ -14,3 +14,11 @@
 
     final result (check screenshots folder image circleci.png)
 
+
+    circle ci steps:
+    1- install backend dependencies
+    2- install front end dependencies
+    3- build backend
+    4- build frontend
+    5- deploy front end and backend
+
