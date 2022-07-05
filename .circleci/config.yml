@@ -22,11 +22,15 @@
         - run:
             name: install 
             command: |
-              npm install
+              api:install && frontend:install
+        - run:
+            name: test
+            command: |
+              api:test && frontend:test
         - run:
             name: build
             command: |
-              npm run build        
+              api:build && frontend:build      
         - run:
             name: deploy
             command: |
