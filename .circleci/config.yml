@@ -28,6 +28,38 @@
             command: |
               frontend:install
         - run:
+            name: set AWS_ACCESS_KEY_ID 
+            command: |
+              eb setenv AWS_ACCESS_KEY_ID=AKIAXZMTRUOPDVLPNQUE
+        - run:
+            name: set AWS_SECRET_ACCESS_KEY 
+            command: |
+              eb setenv AWS_SECRET_ACCESS_KEY=8d6Kmr/AGDGANcGL8FrfJcxXkK6i9ZQ6d47CcKhF
+        - run:
+            name: set POSTGRES_HOST 
+            command: |
+              eb setenv POSTGRES_HOST=database-1.chvspjg4mv1s.us-east-1.rds.amazonaws.com
+        - run:
+            name: set POSTGRES_USERNAME 
+            command: |
+              eb setenv POSTGRES_USERNAME=postgres
+        - run:
+            name: set POSTGRES_DB 
+            command: |
+              eb setenv POSTGRES_DB=postgres
+        - run:
+            name: set POSTGRES_PASSWORD 
+            command: |
+              eb setenv POSTGRES_PASSWORD=postgres
+        - run:
+            name: set PORT 
+            command: |
+              eb setenv PORT=8080
+        - run:
+            name: set DB_PORT 
+            command: |
+              eb setenv DB_PORT=5432            
+        - run:
             name: testBE
             command: |
               api:test
