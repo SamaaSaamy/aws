@@ -22,7 +22,7 @@
         - run:
             name: install 
             command: |
-              npm run install
+              npm install
         - run:
             name: test
             command: |
